@@ -207,7 +207,7 @@ dependencies = [
 
 [[package]]
 name = "evm-cli"
-version = "2.1.0"
+version = "3.0.0"
 dependencies = [
  "anyhow",
  "clap",
@@ -219,7 +219,7 @@ dependencies = [
 
 [[package]]
 name = "evm-core"
-version = "2.1.0"
+version = "3.0.0"
 dependencies = [
  "anyhow",
  "log",
@@ -231,7 +231,7 @@ dependencies = [
 
 [[package]]
 name = "evm-utils"
-version = "2.1.0"
+version = "3.0.0"
 dependencies = [
  "anyhow",
  "clap",
