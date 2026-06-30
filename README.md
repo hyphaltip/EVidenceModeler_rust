@@ -107,4 +107,4 @@ for full details.
 
 ## License
 
-MIT — see [LICENSE.txt](LICENSE.txt).
+BSD — see [LICENSE](LICENSE) and Original [EVM license](LICENSE_EVidenceModeler.txt).
