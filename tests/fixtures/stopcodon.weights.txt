@@ -1,0 +1,1 @@
+ABINITIO_PREDICTION	augustus	10

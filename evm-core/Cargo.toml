@@ -1,0 +1,12 @@
+[package]
+name    = "evm-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow     = { workspace = true }
+log        = { workspace = true }
+memchr     = { workspace = true }
+phf        = { workspace = true }
+rayon      = { workspace = true }
+rustc-hash = "2"

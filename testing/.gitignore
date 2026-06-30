@@ -1,0 +1,11 @@
+# Generated test outputs
+rusttest.EVM.*
+rusttest.partitions*
+__rusttest-EVM_chckpts*
+
+# Legacy Perl artifacts
+smalltest_perl*
+smalltest.*
+__smalltest_perl*
+*.partitions
+*.partitions/

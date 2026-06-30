@@ -1,0 +1,9 @@
+!! Predictions spanning range 1000 - 2000 [R1]
+# EVM prediction: Mode:STANDARD S-ratio: 1.00 1000-2000 orient(+) score(10.00) noncoding_equivalent(1.00) raw_noncoding(1.00) offset(0.00) 
+1000	1100	initial+	1	1	{pred1;ABINITIO}
+1101	1200	INTRON			
+1201	2000	terminal+	1	3	{pred1;ABINITIO}
+
+# EVM prediction: Mode:STANDARD S-ratio: 0.00 3000-4000 orient(+) score(1.00) noncoding_equivalent(100.00) raw_noncoding(100.00) offset(0.00)  *** ELIMINATED *** 
+3000	4000	single+	1	3	{weak;ABINITIO}
+

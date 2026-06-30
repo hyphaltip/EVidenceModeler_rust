@@ -1,0 +1,16 @@
+[package]
+name    = "evm-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "EVidenceModeler"
+path = "src/main.rs"
+
+[dependencies]
+evm-core   = { path = "../evm-core" }
+anyhow     = { workspace = true }
+clap       = { workspace = true }
+env_logger = { workspace = true }
+log        = { workspace = true }
+rayon      = { workspace = true }

@@ -1,0 +1,4 @@
+!! Predictions spanning range 100 - 900 [R1]
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 100-900 orient(+) score(8010.00) noncoding_equivalent(0.80) raw_noncoding(0.00) offset(0.00) 
+100	900	single+	1	3	{augustus_augustus.g1;augustus}
+

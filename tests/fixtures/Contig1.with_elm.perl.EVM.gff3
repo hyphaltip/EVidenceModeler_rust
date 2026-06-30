@@ -1,0 +1,12 @@
+Contig1	EVM	gene	1000	2000	.	+	.	ID=evm.TU.Contig1.1;Name=EVM%20prediction%20Contig1.1
+Contig1	EVM	mRNA	1000	2000	.	+	.	ID=evm.model.Contig1.1;Parent=evm.TU.Contig1.1;Name=EVM%20prediction%20Contig1.1
+Contig1	EVM	exon	1000	1100	.	+	.	ID=evm.model.Contig1.1.exon1;Parent=evm.model.Contig1.1
+Contig1	EVM	CDS	1000	1100	.	+	0	ID=cds.evm.model.Contig1.1;Parent=evm.model.Contig1.1
+Contig1	EVM	exon	1201	2000	.	+	.	ID=evm.model.Contig1.1.exon2;Parent=evm.model.Contig1.1
+Contig1	EVM	CDS	1201	2000	.	+	0	ID=cds.evm.model.Contig1.1;Parent=evm.model.Contig1.1
+
+Contig1	EVM_elm	gene	3000	4000	.	+	.	ID=evm.TU.Contig1.2;Name=EVM%20prediction%20Contig1.2
+Contig1	EVM_elm	mRNA	3000	4000	.	+	.	ID=evm.model.Contig1.2;Parent=evm.TU.Contig1.2;Name=EVM%20prediction%20Contig1.2
+Contig1	EVM_elm	exon	3000	4000	.	+	.	ID=evm.model.Contig1.2.exon1;Parent=evm.model.Contig1.2
+Contig1	EVM_elm	CDS	3000	4000	.	+	0	ID=cds.evm.model.Contig1.2;Parent=evm.model.Contig1.2
+

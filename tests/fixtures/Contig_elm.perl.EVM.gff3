@@ -1,0 +1,10 @@
+Contig_elm	EVM	gene	100	900	.	+	.	ID=evm.TU.Contig_elm.1;Name=EVM%20prediction%20Contig_elm.1
+Contig_elm	EVM	mRNA	100	900	.	+	.	ID=evm.model.Contig_elm.1;Parent=evm.TU.Contig_elm.1;Name=EVM%20prediction%20Contig_elm.1
+Contig_elm	EVM	exon	100	900	.	+	.	ID=evm.model.Contig_elm.1.exon1;Parent=evm.model.Contig_elm.1
+Contig_elm	EVM	CDS	100	900	.	+	0	ID=cds.evm.model.Contig_elm.1;Parent=evm.model.Contig_elm.1
+
+Contig_elm	EVM_elm	gene	1200	1280	.	+	.	ID=evm.TU.Contig_elm.2;Name=EVM%20prediction%20Contig_elm.2
+Contig_elm	EVM_elm	mRNA	1200	1280	.	+	.	ID=evm.model.Contig_elm.2;Parent=evm.TU.Contig_elm.2;Name=EVM%20prediction%20Contig_elm.2
+Contig_elm	EVM_elm	exon	1200	1280	.	+	.	ID=evm.model.Contig_elm.2.exon1;Parent=evm.model.Contig_elm.2
+Contig_elm	EVM_elm	CDS	1200	1280	.	+	0	ID=cds.evm.model.Contig_elm.2;Parent=evm.model.Contig_elm.2
+

@@ -1,0 +1,5 @@
+Contig_stop	EVM	gene	100	900	.	+	.	ID=evm.TU.Contig_stop.1;Name=EVM%20prediction%20Contig_stop.1
+Contig_stop	EVM	mRNA	100	900	.	+	.	ID=evm.model.Contig_stop.1;Parent=evm.TU.Contig_stop.1;Name=EVM%20prediction%20Contig_stop.1
+Contig_stop	EVM	exon	100	900	.	+	.	ID=evm.model.Contig_stop.1.exon1;Parent=evm.model.Contig_stop.1
+Contig_stop	EVM	CDS	100	900	.	+	0	ID=cds.evm.model.Contig_stop.1;Parent=evm.model.Contig_stop.1
+

@@ -1,0 +1,19 @@
+# Release 2.1.0 (Rust rewrite)
+- Full Rust port of the EVM pipeline: evidence_modeler, partition_evm_inputs,
+  recombine_evm_outputs, convert_EVM_outputs_to_GFF3, gff3_file_to_proteins,
+  and the EVidenceModeler orchestrator.
+- Drop-in replacement for Perl evidence_modeler.pl in funannotate.
+- 99.4% gene-level parity and 97.0% protein sequence parity with the Perl
+  implementation on a real fungal genome (Rhodotorula sphaerocarpa, 24
+  scaffolds, ~20 Mb).
+- Parallel execution via rayon (no external ParaFly dependency for the Rust
+  path).
+- CI: cargo fmt --check, cargo clippy -D warnings, cargo test, and golden
+  integration tests on every PR.
+
+# Release 2.1.0
+- added gff3 converters for braker gtf, a snap output format variant, and miniprot (thx, Kresimir!)
+
+# Release 2.0.0 - Jan 17, 2023
+- Software is restructured to simplify execution through a single EVidenceModeler command. ParaFly is included as a plugin for parallel command execution.
+- Docker and Singularity images are available.
