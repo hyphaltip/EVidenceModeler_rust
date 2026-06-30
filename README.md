@@ -1,5 +1,9 @@
 # EVidenceModeler (Rust)
 
+[![CI](https://github.com/hyphaltip/EVidenceModeler_rust/actions/workflows/ci.yml/badge.svg)](https://github.com/hyphaltip/EVidenceModeler_rust/actions/workflows/ci.yml)
+[![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/hyphaltip/EVidenceModeler_rust)](https://github.com/hyphaltip/EVidenceModeler_rust/releases)
+
 A Rust port of [EVidenceModeler](https://github.com/EVidenceModeler/EVidenceModeler),
 a framework for combining gene predictions and evidence alignments into
 consensus gene models. The Rust rewrite is a drop-in replacement for the
