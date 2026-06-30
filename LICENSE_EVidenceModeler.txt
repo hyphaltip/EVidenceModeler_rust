@@ -1,3 +1,5 @@
+This Rust code was based originally on EVidenceModeler https://github.com/EVidenceModeler/EVidenceModeler. The License for it is below. The Rust code will be licensed separately
+
 Copyright (c) 2008, Brian Haas  
 All rights reserved.
 
