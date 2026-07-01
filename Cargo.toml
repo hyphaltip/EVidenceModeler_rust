@@ -9,7 +9,7 @@ resolver = "2"
 [workspace.package]
 version = "3.0.0"
 edition = "2021"
-license = "BSD 3.0"
+license = "BSD-3-Clause"
 repository = "https://github.com/hyphaltip/EVidenceModeler_rust"
 description = "Rust port of EVidenceModeler — consensus gene modeler"
 authors = ["Brian Haas", "Jason Stajich"]
