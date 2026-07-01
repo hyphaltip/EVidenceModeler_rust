@@ -27,6 +27,10 @@ path = "src/bin/convert_EVM_outputs_to_GFF3.rs"
 name = "gff3_gene_prediction_file_validator"
 path = "src/bin/gff3_gene_prediction_file_validator.rs"
 
+[[bin]]
+name = "augustus_to_evm_gff3"
+path = "src/bin/augustus_to_evm_gff3.rs"
+
 [dependencies]
 evm-core   = { path = "../evm-core" }
 anyhow     = { workspace = true }
