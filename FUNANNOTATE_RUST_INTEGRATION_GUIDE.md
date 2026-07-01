@@ -32,6 +32,34 @@ augustus_to_evm_gff3            (527 KB) - Augustus converter
 
 ---
 
+## EvmUtils Scripts Status
+
+### Core EVM pipeline (✅ all ported to Rust)
+- `evidence_modeler.pl` → `evidence_modeler` binary
+- `partition_EVM_inputs.pl` → `partition_evm_inputs` binary
+- `recombine_EVM_partial_outputs.pl` → `recombine_evm_outputs` binary
+- `convert_EVM_outputs_to_GFF3.pl` → `convert_EVM_outputs_to_GFF3` binary
+- `gff3_file_to_proteins.pl` → `gff3_file_to_proteins` binary
+
+### Format converters (✅ all ported to Rust)
+- `EvmUtils/misc/augustus_GFF3_to_EVM_GFF3.pl` → `augustus_to_evm_gff3 --format gff3`
+- `EvmUtils/misc/augustus_GTF_to_EVM_GFF3.pl` → `augustus_to_evm_gff3 --format gtf`
+
+### Validators (✅ ported to Rust)
+- `EvmUtils/gff3_gene_prediction_file_validator.pl` → `gff3_gene_prediction_file_validator` binary
+
+### Other scripts (✅ already ported to Python within funannotate)
+- `EvmUtils/misc/exonerate_gff_to_alignment_gff3.pl` → Python function in `funannotate/aux_scripts/funannotate-p2g.py`
+  - Already embedded in the P2G pipeline
+  - No separate call to Perl script
+  - Comment confirms: "Python port of exonerate_gff_to_alignment_gff3.pl"
+
+### Deprecated/unused scripts
+- Legacy scripts like `create_weights_file.pl`, `write_EVM_commands.pl`, etc. — not called by modern funannotate
+- Keep in EvmUtils for backward compatibility, no porting needed
+
+---
+
 ## Integration Changes Required in funannotate
 
 ### 1. `funannotate/library.py` — Add Rust validator
