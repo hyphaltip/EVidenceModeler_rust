@@ -1,0 +1,43 @@
+package:
+  name: evidencemodeler-rust
+  version: 3.0.0
+
+source:
+  git_url: https://github.com/hyphaltip/EVidenceModeler_rust.git
+  git_rev: main
+
+build:
+  number: 0
+  string: rust_3.0.0_0
+  skip: true  # [win]
+
+requirements:
+  build:
+    - rustc >=1.70
+    - cargo >=1.70
+  host:
+    - rustc >=1.70
+    - cargo >=1.70
+  run:
+    - __glibc >=2.17  # Linux only
+
+test:
+  commands:
+    - evidence_modeler --version
+
+about:
+  home: https://github.com/hyphaltip/EVidenceModeler_rust
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Rust implementation of EVidenceModeler - consensus gene model builder
+  description: |
+    EVidenceModeler (EVM) is a tool for gene model creation using protein and
+    transcript alignment evidence. This is the high-performance Rust implementation.
+  doc_url: https://github.com/hyphaltip/EVidenceModeler_rust
+  dev_url: https://github.com/hyphaltip/EVidenceModeler_rust
+
+extra:
+  maintainers:
+    - bhaas
+    - jstajich
