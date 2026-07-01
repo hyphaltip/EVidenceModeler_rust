@@ -51,10 +51,18 @@ impl Validator {
             let contig = cols[0].to_string();
             let feat_type = cols[2].to_string();
             let lend: u32 = cols[3].parse().map_err(|_| {
-                format!("Invalid start coordinate at line {}: {}", line_num + 1, cols[3])
+                format!(
+                    "Invalid start coordinate at line {}: {}",
+                    line_num + 1,
+                    cols[3]
+                )
             })?;
             let rend: u32 = cols[4].parse().map_err(|_| {
-                format!("Invalid end coordinate at line {}: {}", line_num + 1, cols[4])
+                format!(
+                    "Invalid end coordinate at line {}: {}",
+                    line_num + 1,
+                    cols[4]
+                )
             })?;
             let orient = cols[6].chars().next().unwrap_or('.');
 
@@ -66,8 +74,13 @@ impl Validator {
             let feature_info = cols[8];
 
             // Parse ID
-            let feature_id = extract_attribute(feature_info, "ID")
-                .ok_or_else(|| format!("Cannot parse ID from entry at line {}\n{}", line_num + 1, line))?;
+            let feature_id = extract_attribute(feature_info, "ID").ok_or_else(|| {
+                format!(
+                    "Cannot parse ID from entry at line {}\n{}",
+                    line_num + 1,
+                    line
+                )
+            })?;
 
             // Make CDS IDs unique by appending contig and coordinates
             let mut unique_id = feature_id.clone();
@@ -127,7 +140,10 @@ impl Validator {
             let parent = match self.feature_id_to_data.get(parent_id) {
                 Some(p) => p,
                 None => {
-                    eprintln!("Fatal Error, cannot locate data entry for ID: [{}]", parent_id);
+                    eprintln!(
+                        "Fatal Error, cannot locate data entry for ID: [{}]",
+                        parent_id
+                    );
                     continue;
                 }
             };

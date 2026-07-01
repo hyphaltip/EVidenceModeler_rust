@@ -210,7 +210,13 @@ impl AugustusConverter {
         // mRNA feature
         println!(
             "{}\t{}\tmRNA\t{}\t{}\t.\t{}\t.\tID={};Parent={}",
-            model.contig, "Augustus", gene_start, gene_end, strand_str, model.trans_id, model.gene_id
+            model.contig,
+            "Augustus",
+            gene_start,
+            gene_end,
+            strand_str,
+            model.trans_id,
+            model.gene_id
         );
 
         // Exon features and CDS features
@@ -220,8 +226,14 @@ impl AugustusConverter {
             // Exon
             println!(
                 "{}\t{}\texon\t{}\t{}\t.\t{}\t.\tID={}.exon{};Parent={}",
-                model.contig, "Augustus", exon_start, exon_end, strand_str,
-                model.trans_id, exon_num, model.trans_id
+                model.contig,
+                "Augustus",
+                exon_start,
+                exon_end,
+                strand_str,
+                model.trans_id,
+                exon_num,
+                model.trans_id
             );
 
             // CDS features that overlap with this exon
@@ -238,8 +250,15 @@ impl AugustusConverter {
 
                     println!(
                         "{}\t{}\tCDS\t{}\t{}\t.\t{}\t{}\tID={}.cds{};Parent={}",
-                        model.contig, "Augustus", cds_min, cds_max, strand_str, phase,
-                        model.trans_id, cds_num, model.trans_id
+                        model.contig,
+                        "Augustus",
+                        cds_min,
+                        cds_max,
+                        strand_str,
+                        phase,
+                        model.trans_id,
+                        cds_num,
+                        model.trans_id
                     );
                 }
             }
